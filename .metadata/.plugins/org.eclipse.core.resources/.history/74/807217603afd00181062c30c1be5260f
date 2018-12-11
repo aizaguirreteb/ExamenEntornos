@@ -41,7 +41,6 @@ public class CalculoAreas {
 		
 		do {
 			menu();
-			System.out.printf("Introduce una opcion:");
 			opcion = sc.nextInt();
 			switch(opcion){
 				case 1:
@@ -76,7 +75,7 @@ public class CalculoAreas {
 						System.out.printf("\tAltura:");
 						alturaTrap = sc.nextDouble();
 					}while(baseTrap1 == baseTrap2);
-					System.out.printf("El trapecio de base1 %.2f, base2 %.2f y altura %.2f tiene area %.2f%n%n",baseTrap1,baseTrap2,alturaTrap,calcularAreaTrapecio(baseTrap1, baseTrap2, alturaTrap));
+					System.out.printf("El trapecio de base 1 %.2f, base 2 %.2f y altura %.2f tiene area %.2f%n%n",baseTrap1,baseTrap2,alturaTrap,calcularAreaTrapecio(baseTrap1, baseTrap2, alturaTrap));
 					break;
 					
 				case 4:
