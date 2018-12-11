@@ -27,27 +27,8 @@ public class CalculoAreas {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		int opcion = -1;
 		
-		double baseTri = -1;
-		double alturaTri = -1;
-		
-		do {
-			menu();
-			opcion = sc.nextInt();
-			switch(opcion){
-				case 1:
-					do {
-						System.out.println("Introduce los valores: ");
-						System.out.println("\tBase:");
-						baseTri = sc.nextDouble();
-						System.out.println("\tAltura:");
-						alturaTri = sc.nextDouble();
-					}while(baseTri <= 0 || alturaTri <= 0);
-					System.out.printf("El triangulo de base %.2f y altura %.2f tiene area %.2f%n",baseTri,alturaTri,calcularAreaTriangulo(baseTri, alturaTri));
-					break;				
-			}
-		}while(opcion != 4);
+		menu();		
 		
 		
 	}

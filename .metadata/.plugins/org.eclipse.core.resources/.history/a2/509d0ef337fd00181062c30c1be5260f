@@ -44,7 +44,7 @@ public class CalculoAreas {
 						System.out.println("\tAltura:");
 						alturaTri = sc.nextDouble();
 					}while(baseTri <= 0 || alturaTri <= 0);
-					System.out.printf("El triangulo de base %.2f y altura %.2f tiene area %.2f%n",baseTri,alturaTri,calcularAreaTriangulo(baseTri, alturaTri));
+					System.out.printf("El triangulo de base %.2f y altura %.2f tiene area %.2f%n",baseTri,alturaTri,calcularAreaTriangulo(base, altura));
 					break;				
 			}
 		}while(opcion != 4);
