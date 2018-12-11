@@ -1,0 +1,19 @@
+
+public class CalculoAreas {
+	
+	public static void menu() {
+		System.out.println("\tCALCULO DE AREAS");
+		System.out.println();
+		System.out.println("=====================================");
+		System.out.println("  1. Calcular area de un triangulo");
+		System.out.println("  2. Calcular area de un trapecio");
+		System.out.println("  3. Calcular area de un rectangulo");
+		System.out.println("  4. Salir");
+	}
+
+	public static void main(String[] args) {
+		
+		menu();
+	}
+
+}
