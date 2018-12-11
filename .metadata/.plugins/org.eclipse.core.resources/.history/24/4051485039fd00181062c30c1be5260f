@@ -35,10 +35,6 @@ public class CalculoAreas {
 		double baseRec = -1;
 		double alturaRec = -1;
 		
-		double baseTrap1 = -1;
-		double baseTrap2 = -1;
-		double alturaTrap = -1;
-		
 		do {
 			menu();
 			opcion = sc.nextInt();
@@ -63,19 +59,6 @@ public class CalculoAreas {
 						alturaRec = sc.nextDouble();
 					}while(baseRec < 2 || alturaRec < 2 || baseRec > 10 || alturaRec > 10);
 					System.out.printf("El rectangulo de base %.2f y altura %.2f tiene area %.2f%n",baseRec,alturaRec,calcularAreaRectangulo(baseRec, alturaRec));
-					break;
-					
-				case 3:
-					do {
-						System.out.println("Introduce los valores: ");
-						System.out.println("\tBase 1:");
-						baseTrap1 = sc.nextDouble();
-						System.out.println("\tBase 2:");
-						baseTrap2 = sc.nextDouble();
-						System.out.println("\tAltura:");
-						alturaTrap = sc.nextDouble();
-					}while(baseTrap1 != baseTrap2);
-					System.out.printf("El trapecio de base 1 %.2f, base 2 %.2f y altura %.2f tiene area %.2f%n",baseTrap1,baseTrap2,alturaTrap,calcularAreaTrapecio(baseTrap1, baseTrap2, alturaTrap));
 					break;
 			}
 		}while(opcion != 4);
