@@ -32,9 +32,6 @@ public class CalculoAreas {
 		double baseTri = -1;
 		double alturaTri = -1;
 		
-		double baseRec = -1;
-		double alturaRec = -1;
-		
 		do {
 			menu();
 			opcion = sc.nextInt();
@@ -48,18 +45,7 @@ public class CalculoAreas {
 						alturaTri = sc.nextDouble();
 					}while(baseTri <= 0 || alturaTri <= 0);
 					System.out.printf("El triangulo de base %.2f y altura %.2f tiene area %.2f%n",baseTri,alturaTri,calcularAreaTriangulo(baseTri, alturaTri));
-					break;
-				
-				case 2:
-					do {
-						System.out.println("Introduce los valores (entre 2 y 10): ");
-						System.out.println("\tBase:");
-						baseRec = sc.nextDouble();
-						System.out.println("\tAltura:");
-						alturaRec = sc.nextDouble();
-					}while(baseRec < 2 || alturaRec < 2 || baseRec > 10 || alturaRec > 10);
-					System.out.printf("El rectangulo de base %.2f y altura %.2f tiene area %.2f%n",baseRec,alturaRec,calcularAreaRectangulo(baseRec, alturaRec));
-					break;
+					break;				
 			}
 		}while(opcion != 4);
 		
